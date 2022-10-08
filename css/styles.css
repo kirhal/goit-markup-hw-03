@@ -1,4 +1,5 @@
-/* Common rules */
+/* ---------- Common rules -----------*/
+
 body {
   max-width: 1600px;
   background-color: #fff;
@@ -23,7 +24,28 @@ ul {
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
+}
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus {
+  color: #2196f3;
+}
+.benefits-list,
+.services-list,
+.site-nav,
+.team-list,
+.footer-list,
+.example-list,
+.filter-buttons-list,
+.contacts-list {
+  list-style-type: none;
 }
 
 /* -------------- Header --------------- */
@@ -126,6 +148,40 @@ ul {
   text-align: center;
 }
 
+/* ------------- Benefits section --------- */
+
+.container.benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.benefits-title {
+  display: none;
+}
+.benefits-list {
+  display: flex;
+}
+.benefits-list .title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.benefits-list .desc {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.benefits-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-section {
+  text-decoration: none;
+  background-color: #2f303a;
+}
 .address {
   font-style: normal;
   color: #fff;
@@ -134,13 +190,6 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.link {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.02em;
-}
 .footer {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -148,10 +197,6 @@ ul {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-}
-.link:hover,
-.link:focus {
-  color: #2196f3;
 }
 
 .filter-buttons {
@@ -171,36 +216,12 @@ ul {
   background-color: #2196f3;
   color: #fff;
 }
-.benefits-title {
-  display: none;
-}
+
 .services-title,
 .team-title {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-.benefits-list h3 {
-  font-size: 14px;
-  line-height: 1.15;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-.benefits-list p {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-.benefits-list,
-.services-list,
-.site-nav,
-.team-list,
-.footer-list,
-.example-list,
-.filter-buttons-list,
-.contacts-list {
-  list-style-type: none;
 }
 
 .team-section {
@@ -224,10 +245,7 @@ ul {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.footer-section {
-  text-decoration: none;
-  background-color: #2f303a;
-}
+
 .example-list h3 {
   font-size: 18px;
   line-height: 2;
