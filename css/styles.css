@@ -37,6 +37,7 @@ ul {
 .link:focus {
   color: #2196f3;
 }
+
 .benefits-list,
 .services-list,
 .site-nav,
@@ -53,13 +54,7 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-/* -------------- Header --------------- */
 .logo {
-  margin-right: 93px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
   color: #000000;
   font-family: 'Raleway';
   font-weight: 700;
@@ -70,6 +65,13 @@ img {
 }
 .logo-word {
   color: #2196f3;
+}
+
+/* -------------- Header --------------- */
+.header .logo {
+  margin-right: 93px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo-word-footer {
   color: #fff;
@@ -92,8 +94,16 @@ img {
 .site-nav .link.current {
   color: #2196f3;
 }
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
 .link.contacts {
   color: #757575;
+}
+.link.contacts:hover,
+.link.contacts:focus {
+  color: #2196f3;
 }
 .contacts-list {
   display: flex;
@@ -252,11 +262,19 @@ img {
   margin-bottom: 30px;
 }
 
-.footer-section {
+/* ------------- Footer section ----------- */
+
+.footer-box {
   text-decoration: none;
   background-color: #2f303a;
 }
-.address {
+.container.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.link.address {
+  margin-bottom: 20px;
+
   font-style: normal;
   color: #fff;
   font-weight: 400;
@@ -264,13 +282,20 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
-.footer {
+.contacts.footer {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.footer-list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .filter-buttons {
