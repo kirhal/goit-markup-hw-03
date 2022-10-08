@@ -52,8 +52,15 @@ ul {
   margin-right: 50px;
 }
 .site-nav .link {
+  display: inline-block;
+
   padding-top: 32px;
   padding-bottom: 32px;
+
+  color: #212121;
+}
+.site-nav .link.current {
+  color: #2196f3;
 }
 .link.contacts {
   color: #757575;
@@ -65,6 +72,8 @@ ul {
   margin-right: 50px;
 }
 .contacts-list .link {
+  display: inline-block;
+
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -115,14 +124,6 @@ ul {
   line-height: 1.9;
   letter-spacing: 0.06em;
   text-align: center;
-}
-
-.site-nav a {
-  display: flex;
-  color: #212121;
-}
-.site-nav .link.current {
-  color: #2196f3;
 }
 
 .address {
