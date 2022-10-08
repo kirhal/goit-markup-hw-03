@@ -282,6 +282,10 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.link.address:hover,
+.link.address:focus {
+  color: #2196f3;
+}
 .contacts.footer {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
