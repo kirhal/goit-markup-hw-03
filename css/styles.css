@@ -177,7 +177,9 @@ img {
 }
 .benefits-list {
   display: flex;
-  justify-content: space-between;
+}
+.benefits-list .item {
+  max-width: 270px;
 }
 .benefits-list .title {
   margin-bottom: 10px;
