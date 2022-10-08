@@ -44,7 +44,7 @@ ul {
 .team-list,
 .footer-list,
 .example-list,
-.filter-buttons-list,
+.filter-list,
 .contacts-list {
   list-style-type: none;
 }
@@ -298,8 +298,20 @@ img {
   margin-bottom: 9px;
 }
 
-.filter-buttons {
-  font-family: 'Roboto', sans-serif;
+/* ------------- Portfolio section ----------- */
+
+.container.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-title {
+  display: none;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+.filter-list .button {
   background-color: #f5f4fa;
   border-radius: 4px;
   border: 0;
@@ -310,22 +322,19 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.filter-buttons:hover,
-.filter-buttons:focus {
+.filter-list .button:hover,
+.filter-list .button:focus {
   background-color: #2196f3;
   color: #fff;
 }
-.example-list h3 {
+.example-list .title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.example-list p {
+.example-list .desc {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: #757575;
-}
-.portfolio-title {
-  display: none;
 }
