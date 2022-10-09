@@ -19,6 +19,10 @@ ul {
   margin: 0;
   padding: 0;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -127,7 +131,7 @@ img {
 
 /* -------------- Hero section------------ */
 
-.hero-section {
+.section.hero {
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -168,10 +172,6 @@ img {
 
 /* ------------- Benefits section --------- */
 
-.container.benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .benefits-title {
   display: none;
 }
@@ -201,6 +201,9 @@ img {
 
 /* ------------- Services section ----------- */
 
+.section.services {
+  padding-top: 0px;
+}
 .services-title,
 .team-title {
   margin-bottom: 50px;
@@ -209,9 +212,6 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-}
-.container.services {
-  padding-bottom: 94px;
 }
 .services-list {
   display: flex;
@@ -223,13 +223,10 @@ img {
 
 /* ------------- Team section ----------- */
 
-.team-section {
+.section.team {
   background-color: #f5f4fa;
 }
-.container.team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .team-list {
   display: flex;
 }
@@ -306,10 +303,6 @@ img {
 
 /* ------------- Portfolio section ----------- */
 
-.container.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .portfolio-title {
   display: none;
 }
